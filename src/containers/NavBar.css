@@ -1,0 +1,36 @@
+.NavBar{
+    
+}
+.navList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 50px;
+}
+.navList li{
+    list-style: none;
+}
+
+.navLink{
+    color: #45D1F5;
+    text-decoration: none;
+    transition: color ease 350ms;
+}
+
+.navLink:hover{
+    color: #F3916A;
+}
+
+@media (max-width:768px){
+    .navList{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+    .navList li{
+        margin: 10px 0;
+        align-self: center;
+    }
+}
