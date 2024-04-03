@@ -7,15 +7,25 @@ import Slider from 'react-slick';
 function Rotation() {
 
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false
+        }
+      }
+    ]
   };
-
+  
   return (
-    <div className="Rotation">
+    <div  className="Rotation">
       <h2>Free champion Rotation</h2>
       <Slider {...settings} className='rotationSlider'>
         <div>

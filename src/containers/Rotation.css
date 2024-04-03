@@ -13,3 +13,10 @@
 .rotationSlider img{
     margin: 0 auto;
 }
+
+.slick-active {
+    color: #45D1F5;
+}
+.slick-dots li{
+
+}
